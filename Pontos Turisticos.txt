@@ -12,3 +12,10 @@ Friburgo:
 Country Club 
 Pedra do Cachorro 
 Tres Picos
+
+Tasks:
+1- Html pagina inicial: Miele
+2- Html Friburgo: Lucas Amorim
+3- Html Teresopolis: Bianco
+4- Html Petropolis: Arthur
+5- Estilizacao e padronizacao das paginas: Pepê
