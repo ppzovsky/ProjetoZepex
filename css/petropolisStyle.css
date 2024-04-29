@@ -33,10 +33,11 @@
   .container01 {
     width: 99vw;
     z-index: 0;
-    position: fixed;
+    position: absolute;
   }
   .videoBack {
-    max-width: 100%;
+    min-width: 100%;
+    min-height: auto;
     z-index: 0;
   }
   
