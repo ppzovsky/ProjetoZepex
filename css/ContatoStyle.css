@@ -21,7 +21,7 @@ html, body {
 }
 
 .form {
-    background-color: rgb(5, 148, 52);
+    background-color:rgba(47, 61, 29, 0.9);;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
@@ -76,7 +76,7 @@ textarea {
 }
 
 .enviar:hover {
-    background-color: rgb(16, 194, 75);
+    background-color:rgba(47, 61, 29, 0.9);;
     border: none;
     color: white;
 }
@@ -85,7 +85,7 @@ textarea {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: rgb(50, 192, 86);
+    background-color: rgba(47, 61, 29, 0.9);;
     margin: 0%;
 }
 
@@ -95,19 +95,42 @@ textarea {
 
 .texto {
     display: none;
-    color: rgb(5, 148, 52);
+    color:rgba(47, 61, 29, 0.9);;
 }
 
 .tituloEquipe {
     text-align: center;
     margin-top: 80px;
-    color: rgb(5, 148, 52);
+    color:rgba(47, 61, 29, 0.9);
 
 }
 
 .container {
+    display: flex;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin-bottom: 100px;
 }
+
+.circulo{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    background-color: rgba(47, 61, 29, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo:hover{
+    transform: scale(1.1);
+}
+
+.circulo img{
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+}
+
+
