@@ -8,6 +8,22 @@
   font-size: 22px;
 }
 
+
+
+.homenagem {
+  position: absolute;
+  color: rgb(233, 240, 224);
+  right: 5%;
+  top: 123%;
+}
+
+.novoLogo {
+  position: absolute;
+  top: -32%;
+  width: 300px;
+  z-index: 6;
+}
+
 .temaCentral {
   text-align: center;
   background-color: rgb(233, 240, 224);
@@ -32,6 +48,7 @@
 .container {
   width: 99vw;
   z-index: 0;
+  position: fixed;
 }
 .videoBack {
   max-width: 100%;
@@ -102,6 +119,7 @@
   position: absolute;
   transform: rotate(-4deg);
   z-index: 4;
+  transition: transform 0.3s ease-in-out;
 }
 .img01 {
   max-height: 8.125rem;
@@ -121,6 +139,7 @@
   position: absolute;
   transform: rotate(4deg);
   z-index: 4;
+  transition: transform 0.3s ease-in-out;
 }
 .img02 {
   height: 8.125rem;
@@ -141,6 +160,7 @@
   position: absolute;
   transform: rotate(-4deg);
   z-index: 4;
+  transition: transform 0.3s ease-in-out;
 }
 .img03 {
   max-height: 8.125rem;
@@ -148,6 +168,15 @@
   width: 16.25rem;;
 }
 
+.containerFotos:hover{
+  transform: scale(1.2);
+}
+.containerFotos02:hover{
+  transform: scale(1.2);
+}
+.containerFotos03:hover{
+  transform: scale(1.2);
+}
 
 
 /*.imagemTur {
