@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="ContatoStyle.css">
+</head>
+<body>
+    <div class="fotoDestaque">
+      <img src="top.jpg" alt="">
+    </div>
+
+<h1 class="tituloEquipe">Conheça a nossa equipe</h1>
+
+<div class="container">  
+  <div>
+    <img src="1.png" alt="" class="imagem" onclick="mostrarTexto('texto1')">
+    <p id="texto1" class="texto">Thiago Moura<br>Turma 16<br>Nova Friburgo</p>
+  </div>
+  
+  <div>
+    <img src="1.png" alt="" class="imagem" onclick="mostrarTexto('texto2')">
+    <p id="texto2" class="texto">João Pedro<br>Turma 16<br>Nova Friburgo</p>
+  </div>
+
+  <div>
+    <img src="1.png" alt="" class="imagem" onclick="mostrarTexto('texto3')">
+    <p id="texto3" class="texto">Luiz Miele<br>Turma 16<br>Nova Friburgo</p>
+  </div>
+
+  <div>
+    <img src="1.png" alt="" class="imagem" onclick="mostrarTexto('texto4')">
+    <p id="texto4" class="texto">Arthur Foster<br>Turma 16<br>Nova Friburgo</p>
+  </div>
+
+  <div>
+    <img src="1.png" alt="" class="imagem" onclick="mostrarTexto('texto5')">
+    <p id="texto5" class="texto">Bianco Lorencini<br>Turma 16<br>Nova Friburgo</p>
+  </div>
+
+  <div>
+    <img src="1.png" alt="" class="imagem" onclick="mostrarTexto('texto6')">
+    <p id="texto6" class="texto">Lucas<br>Turma 16<br>Nova Friburgo</p>
+  </div>
+
+</div>
+
+
+<div class="form">
+  <h2 class="tituloForm">Entre em contato com nossa equipe e veja como podemos ajudar:</h2>
+<form>
+<div>
+  <label for="nome"></label><br>
+  <input type="text" id="nome" name="nome" placeholder="Qual o seu nome?"><br>
+</div>
+
+<div>
+  <label for="email"></label><br>
+  <input type="email" id="email" name="email" placeholder="Qual o seu e-mail?"><br>
+</div>
+  
+<div>
+  <label for="mensagem"></label><br>
+  <textarea id="mensagem" name="mensagem" placeholder="Fale mais sobre a sua dúvida"></textarea><br>
+</div>
+  
+<input type="submit" value="Enviar" class="enviar">
+</form>
+</div>
+
+<p class="footerDireitos">Todos os direitos reservados®</p>
+
+<script src="equipe.js"></script>
+
+</body>
+</html>

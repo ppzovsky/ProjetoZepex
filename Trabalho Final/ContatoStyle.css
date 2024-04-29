@@ -1,0 +1,113 @@
+html, body {
+    margin: 0; /* Remove margens padrão do corpo e da página */
+    padding: 0; /* Remove preenchimento padrão do corpo e da página */
+    width: 100%; /* Define a largura do corpo e da página como 100% da tela */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fotoDestaque {
+    width: 100%; /* Define a largura da div como 100% da tela */
+    height: 300px;
+}
+
+.fotoDestaque img {
+    width: 100%; /* Define a largura da imagem como 100% da div (ou seja, 100% da tela) */
+    height: 100%;
+}
+
+.tituloForm {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.form {
+    background-color: rgb(5, 148, 52);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+label {
+    width: 200px; /* Define a largura da label */
+    display: inline-block; /* Permite definir a largura da label */
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input[type="text"]{
+    width: 300px; /* Define a largura do input e textarea */
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+
+input[type="email"]{
+    width: 300px; /* Define a largura do input e textarea */
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+
+::placeholder {
+    line-height: 2; /* Define a altura da linha para 2 vezes a altura do texto */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+textarea {
+    width: 300px; /* Define a largura do input e textarea */
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+
+
+.enviar {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    width: 150px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.enviar:hover {
+    background-color: rgb(16, 194, 75);
+    border: none;
+    color: white;
+}
+
+.footerDireitos {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(50, 192, 86);
+    margin: 0%;
+}
+
+.imagem {
+    cursor: pointer;
+}
+
+.texto {
+    display: none;
+    color: rgb(5, 148, 52);
+}
+
+.tituloEquipe {
+    text-align: center;
+    margin-top: 80px;
+    color: rgb(5, 148, 52);
+
+}
+
+.container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 100px;
+}
