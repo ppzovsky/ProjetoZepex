@@ -1,0 +1,230 @@
+[33mcommit 4df4fa5cb64de1e2f6d87388b972d6886964ac34[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Tue Apr 30 13:53:57 2024 -0300
+
+    feat videos
+
+[33mcommit 51d2dba4b2f6423ea00e682273c796b73613c1ff[m
+Merge: 3ea4224 cb0e96e
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Tue Apr 30 13:38:16 2024 -0300
+
+    Merge branch 'main' of https://github.com/ppzovsky/ProjetoZepex
+
+[33mcommit 3ea422427954f748bdcb0cba7de0d272818174ef[m
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Tue Apr 30 13:37:44 2024 -0300
+
+    feat new interations in subpages
+
+[33mcommit cb0e96e004a4e890dd0c083df124bed28d8e0e75[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Bianco <arthnilo@gmail.com>
+Date:   Tue Apr 30 13:05:46 2024 -0300
+
+    Feat: inicio responsividade home
+
+[33mcommit 860cfb7ab2e2961b61672f7a89b360b00156dfa9[m
+Merge: 698aeb1 7a2c4dc
+Author: Bianco <arthnilo@gmail.com>
+Date:   Tue Apr 30 11:22:39 2024 -0300
+
+    Merge branch 'main' of https://github.com/ppzovsky/ProjetoZepex
+
+[33mcommit 698aeb1153b94c5e9d87dab52be0e6b4bab7ae87[m
+Author: Bianco <arthnilo@gmail.com>
+Date:   Tue Apr 30 11:22:12 2024 -0300
+
+    feat: melhoras na home
+
+[33mcommit 7a2c4dcdcfdd35a69e2a35061b269a764cfc81fc[m
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Mon Apr 29 18:18:40 2024 -0300
+
+    new names
+
+[33mcommit b13021ae02e3562b22b43f0c88e11a7b2c891239[m
+Merge: 78e8843 b17390f
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Mon Apr 29 18:14:26 2024 -0300
+
+    Merge branch 'main' of https://github.com/ppzovsky/ProjetoZepex
+
+[33mcommit 78e8843a9eb303f227ca1c25e54ece331667b1a4[m
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Mon Apr 29 18:10:29 2024 -0300
+
+    feat friburgo page
+
+[33mcommit b17390ff9c475d1bd9170fb1760536fb15ad7ffb[m
+Author: Bianco <arthnilo@gmail.com>
+Date:   Mon Apr 29 17:58:25 2024 -0300
+
+    feat: new HomePage
+
+[33mcommit 78e420ceed5a87bd148acc3a447cc6bb43824db5[m
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Mon Apr 29 15:28:30 2024 -0300
+
+    correcao de pastas
+
+[33mcommit d416fa41b94dc9c6a90f30387080821b375d59ea[m
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Mon Apr 29 13:11:20 2024 -0300
+
+    add contato and teresopolis pages
+
+[33mcommit 066bc4e13baf66f46812c31d53d9993f37261e7b[m
+Author: ThiagoSausmikat <tsmoura.93@gmail.com>
+Date:   Mon Apr 29 12:11:14 2024 -0300
+
+    add pagina contato
+
+[33mcommit e9f0b5034c81dcdc960f737448e31dc6c1aae319[m
+Merge: 609fcb8 801a42f
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Mon Apr 29 10:46:51 2024 -0300
+
+    Merge branch 'main' of https://github.com/ppzovsky/ProjetoZepex
+
+[33mcommit 609fcb8b4f8b60d54178350d183e99512e70175e[m
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Mon Apr 29 10:46:44 2024 -0300
+
+    att
+
+[33mcommit 801a42f15f6938face4c85c3ac5a4a371fbc09d4[m
+Merge: 5c4b914 81b2376
+Author: luizmiele <luiz.miele@hotmail.com>
+Date:   Mon Apr 29 10:45:52 2024 -0300
+
+    Merge branch 'main' of https://github.com/ppzovsky/ProjetoZepex
+
+[33mcommit 5c4b914111096f33567df320b86e716d2aa9311e[m
+Author: luizmiele <luiz.miele@hotmail.com>
+Date:   Mon Apr 29 10:45:42 2024 -0300
+
+    Pagina tere
+
+[33mcommit 81b2376fe748dca02cb7323fe5003074a279d7e4[m
+Author: Bianco <arthnilo@gmail.com>
+Date:   Mon Apr 29 09:27:19 2024 -0300
+
+    Correção de links para nova versão
+
+[33mcommit faa12f4496f453e3c4366f8628b39e0f88469788[m
+Author: Bianco <arthnilo@gmail.com>
+Date:   Mon Apr 29 09:10:00 2024 -0300
+
+    feat: HomePage completa
+
+[33mcommit 105442455a454bf937bbc3f59adc8413cbe79a4e[m
+Merge: 61811a2 09939ae
+Author: luizmiele <luiz.miele@hotmail.com>
+Date:   Sun Apr 28 18:36:20 2024 -0300
+
+    Merge branch 'main' of https://github.com/ppzovsky/ProjetoZepex
+
+[33mcommit 61811a2c321aee118e02123ddfdeee765b71b03c[m
+Author: luizmiele <luiz.miele@hotmail.com>
+Date:   Sun Apr 28 18:33:42 2024 -0300
+
+    Pagina do html de teresopolis pronta
+
+[33mcommit 09939ae90da6ef8953aef2bc3fb5ddab3f358b99[m
+Merge: 7a6e34a d7cb39c
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Sun Apr 28 18:32:34 2024 -0300
+
+    Merge branch 'main' of https://github.com/ppzovsky/ProjetoZepex
+
+[33mcommit 7a6e34a5187bfc42247c9f9fbedd7f65a92520ed[m
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Sun Apr 28 18:32:28 2024 -0300
+
+    pagina petropolis finalizada
+
+[33mcommit d7cb39cee7fa7171f8496707713a3f9036ad9929[m
+Author: luizmiele <luiz.miele@hotmail.com>
+Date:   Sun Apr 28 14:27:18 2024 -0300
+
+    Criada a pagina Teresopolis e trocando o nome da home para homeMiele
+
+[33mcommit c4c71261363b6b9145a6c0cfa49fe5ff5b0d4416[m
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Sun Apr 28 13:42:04 2024 -0300
+
+    atualizado
+
+[33mcommit 2cf5e8440656a90c90c4d253817c6bf8602ff81c[m
+Merge: 3c9ac85 c1a5bb1
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Sun Apr 28 10:33:58 2024 -0300
+
+    Merge branch 'main' of https://github.com/ppzovsky/ProjetoZepex
+
+[33mcommit 3c9ac85a42f2686c1950e21b94da46ac5a8307b3[m
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Sun Apr 28 10:33:53 2024 -0300
+
+    add photos
+
+[33mcommit c1a5bb12817f540c9f215416ed0e63d436a941f5[m
+Author: Bianco <arthnilo@gmail.com>
+Date:   Sun Apr 28 10:32:08 2024 -0300
+
+    Feat: upd
+
+[33mcommit 4f41f3135e0310d1fb42cb05cb2819fbfc9dc836[m
+Author: Lcs97 <Brutallucas@gmail.com>
+Date:   Sat Apr 27 15:09:45 2024 -0300
+
+    Esqueleto do html de Friburgo
+
+[33mcommit 8c46cb2a5186e3c16c69e9d2917cbe135b029a2a[m
+Merge: f9ad3a6 44a345a
+Author: ArturFoster <arturfosterdesouza@gmail.com>
+Date:   Sat Apr 27 11:38:46 2024 -0300
+
+    Merge branch 'main' of https://github.com/ppzovsky/ProjetoZepex
+
+[33mcommit f9ad3a67fcd3408b100d1f67ad2413d9c910cb71[m
+Author: ArturFoster <arturfosterdesouza@gmail.com>
+Date:   Sat Apr 27 11:37:44 2024 -0300
+
+    Esqueleto html petropolis
+
+[33mcommit 44a345a3c43a52df0460400831c6550288340791[m
+Author: luizmiele <luiz.miele@hotmail.com>
+Date:   Sat Apr 27 01:10:41 2024 -0300
+
+    Ideia de pagina Home
+
+[33mcommit 2c9f9579f1d061f9cf680a8de763ac59a1196589[m
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Fri Apr 26 14:34:28 2024 -0300
+
+    create logo
+
+[33mcommit 0bf27087aca1722d2a29680abbebb795c00adb38[m
+Author: João Pedro Soares <107408989+ppzovsky@users.noreply.github.com>
+Date:   Fri Apr 26 14:14:57 2024 -0300
+
+    Create README.md
+
+[33mcommit 95a33ecf1125a7c91ad901dfb158d24cee41e34b[m
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Fri Apr 26 14:07:16 2024 -0300
+
+    push html
+
+[33mcommit 11162405d94c452416e2d612d464902d832c67ef[m
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Fri Apr 26 14:04:42 2024 -0300
+
+    add tasks
+
+[33mcommit 8f1547f506e6fd3f8b3dc977a7d8e87d3bda0fae[m
+Author: João Pedro Soares <joaopedrosoaresdebrito@gmail.com>
+Date:   Fri Apr 26 11:52:41 2024 -0300
+
+    Projeto iniciado
