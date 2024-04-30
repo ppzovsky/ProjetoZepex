@@ -1,18 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-  }
-  
-  .linkContato{
-    font-size: 22px;
-  }
-  
-  .temaCentral {
-    text-align: center;
-    background-color: rgb(233, 240, 224);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.temaCentral {
+  text-align: center;
+  background-color: rgb(71, 91, 42);
+    color: rgb(233, 240, 224);
     margin-top: 10px;
     height: 30px;
     border-radius: 20px;
@@ -23,6 +17,8 @@
   
   .fontTema {
     font-family: "Vujahday Script", cursive;
+    text-decoration: none;
+    color: rgb(233,240,224);
   }
   
   .footerDireitos {
@@ -31,22 +27,24 @@
   
   /*-----video de fundo -----*/
   .container01 {
+    position: relative;
+    min-height: 100%;
     width: 99vw;
     z-index: 0;
-    position: absolute;
+    position: fixed;
+    align-items: end;
   }
   .videoBack {
     min-width: 100%;
-    min-height: auto;
     z-index: 0;
   }
   
   /*-----retangulos decorativos-----*/
   .container02 {
-    width: 99vw;
-    height: 22.875rem;
-    top: 47%;
-    background-color: rgba(47, 61, 29, 0.9);
+    width: 100vw;
+    height: 22.575rem;
+    top: 35%;
+    background-color:  rgba(233, 240, 224, 0.7);
     position: absolute;
     z-index: 1;
   }
@@ -54,14 +52,25 @@
     display: flex;
     justify-content: center;
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.250);
-    width: 99vw;
+    width: 100vw;
     height: 18.625rem;
-    top: 53%;
-    background-color: rgb(71, 91, 42);
+    top: 40%;
+    background-color: rgb(233, 240, 224);
     position: absolute;
     z-index: 3;
     font-optical-sizing: auto;
   }
+
+  .Logo {
+    display: flex;
+    position: absolute;
+    top: 1%;
+    z-index: 6;
+    width: 30%;
+    height: 37%;
+    justify-content: center;
+    left: 35%;
+  } 
 
   .container03 h2{
     font-size: 25px;
@@ -77,11 +86,12 @@
     width: 50vw;
     min-height: 28.125rem;
     height: auto;
-    top: 35%;
+    top: 25%;
     left: 25%;
-    background-color: rgb(233, 240, 224);
+    background-color:  rgba(47, 61, 29);
     position: absolute;
     z-index: 2;
+    color: rgb(233, 240, 224) ;
   }
 
   .container04 h4{
@@ -105,17 +115,24 @@
   .containerContato {
     display: flex;
     flex-direction: column;
+    font-size: x-large;
     justify-content: center;
     align-items: center;
     border-radius: 8px 8px 0 0;
     width: 10vw;
-    height: 4.125rem;
-    top: 43%;
+    height: 5.125rem;
+    top: 30%;
     right: 10%;
-    background-color: rgb(233, 240, 224);
+    background-color: rgb(71, 91, 42);
     position: absolute;
     transform: rotate(4deg);
+    transition: transform 0.3s ease-in-out;
     z-index: 2;
+    cursor: pointer;
+  }
+
+  .containerContato:hover{
+    transform: scale(1.1);
   }
   
   /*-----fotos-----*/
@@ -126,12 +143,15 @@
     flex-direction: column;
     width: 17.5rem;
     height: 12.5rem;
-    top: 66%;
+    top: 49%;
     left: 10%;
-    background-color: rgb(233, 240, 224);
+    background-color:  rgba(47, 61, 29, 0.9);
+    color: rgb(233, 240, 224);
     position: absolute;
     transform: rotate(-4deg);
     z-index: 4;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
   }
 
   .containerFotos:hover{
@@ -156,12 +176,15 @@
     flex-direction: column;
     width: 17.5rem;
     height: 12.5rem;
-    top: 66%;
+    top: 49%;
     left: 40%;
-    background-color: rgb(233, 240, 224);
+    background-color:  rgba(47, 61, 29, 0.9);
+    color: rgb(233, 240, 224);
     position: absolute;
     transform: rotate(4deg);
     z-index: 4;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
   }
   .img02 {
     height: 8.125rem;
@@ -176,15 +199,25 @@
     flex-direction: column;
     width: 17.5rem;
     height: 12.5rem;
-    top: 66%;
+    top: 49%;
     right: 10%;
-    background-color: rgb(233, 240, 224);
+    background-color:  rgba(47, 61, 29, 0.9);
+    color: rgb(233, 240, 224);
     position: absolute;
     transform: rotate(-4deg);
     z-index: 4;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
   }
+
   .img03 {
     max-height: 8.125rem;
     margin: 0.625rem;
     width: 16.25rem;;
   }
+  .carousel-item img {
+    object-fit: cover; 
+    height: 465px;
+  }
+
+  

@@ -1,266 +1,501 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap"
-            rel="stylesheet"
-        />
-        <link 
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
-        rel="stylesheet">
-        <link rel="stylesheet" href="../css/petropolisStyle.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <title>Friburgo</title>
-    </head>
-    <body>
-        <div class="container01">
-            <video
-            class="videoBack"
-            src="../vids/backGroundVid.mp4"
-            autoplay
-            muted
-            loop
-            ></video>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/petropolisStyle.css" />
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Friburgo</title>
+  </head>
+  <body>
+    <div class="container01">
+      <video
+        class="videoBack"
+        src="../vids/fundo friburgo.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+    </div>
 
-        <div class="container02"></div>
-        <div class="container03">
-            <h2 class="temaCentral">Conheça um pouco de Friburgo</h2>
-        </div>
-        <div class="containerFotos">
-            <img
-                class="img01"
-                src="../img/friburgo/caoSentado.jpg"
-                alt="Museu imperial" 
-                onclick="mostra(1)"/>
-            <span class="fontTema" style="text-align: center" onclick="mostra(1)">Parque Ecológico Cão Sentado</span>
-        </div>
+    <div class="container02"></div>
 
-        <div class="containerFotos02">
-            <img
-                class="img02"
-                src="../img/friburgo/casasuica.jpg"
-                alt="CasaSuica" 
-                onclick="mostra(2)"/>
-            <span class="fontTema" style="text-align: center">Casa Suíça (Memorial da Colonização Suíça)</span>
-        </div>
+    <div class="container03">
+      <h2 class="temaCentral">Conheça um pouco de Friburgo</h2>
+    </div>
+    <div class="containerFotos">
+      <img
+        class="img01"
+        src="../img/friburgo/caoSentado.jpg"
+        alt="Museu imperial"
+        onclick="mostra(1)"
+      />
+      <span class="fontTema" style="text-align: center" onclick="mostra(1)"
+        >Parque Ecológico Cão Sentado</span
+      >
+    </div>
 
-        <div class="containerFotos03">
-            <img
-                class="img03"
-                src="../img/friburgo/country-clube.jpg"
-                alt="CountryClube " 
-                onclick="mostra(3)"/>
-                <span class="fontTema" style="text-align: center">Nova Friburgo Country Club</span>
-        </div>
-        <div class="container04">
-            <div id="image1" class="selected" style="display:none;">
-                <div class="CaoSentado">
-                    <h3>Parque Ecológico Cão Sentado</h3>
-                    
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="../img/friburgo/caoSentado1.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../img/friburgo/caoSentado2.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../img/friburgo/caoSentado3.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../img/friburgo/caoSentado4.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
+    <div class="containerFotos02">
+      <img
+        class="img02"
+        src="../img/friburgo/casasuica.jpg"
+        alt="CasaSuica"
+        onclick="mostra(2)"
+      />
+      <span class="fontTema" style="text-align: center"
+        >Casa Suíça (Memorial da Colonização Suíça)</span
+      >
+    </div>
 
-                    <h4>Sobre</h4>
-                    <p>Uma trilha ecológica de 40 minutos adentrando por varias cavernas e grutas, 
-                      uma fauna e flora incrível, até chegar na pedra do cão sentado com seus 111 metros de altura, 
-                      um lugar pra toda a família!</p>
-                    <small>Acesse: <a 
-                      href="https://pedradocaosentado.com.br/">
-                      https://pedradocaosentado.com.br/</a> para mais informações.</small>
+    <div class="containerFotos03">
+      <img
+        class="img03"
+        src="../img/friburgo/country-clube.jpg"
+        alt="CountryClube "
+        onclick="mostra(3)"
+      />
+      <span class="fontTema" style="text-align: center"
+        >Nova Friburgo Country Club</span
+      >
+    </div>
+    <div class="container04">
 
-                    <h4>Como Chegar</h4>
-                    <p>RJ-116, Km 92, Nova Friburgo, Estado do Rio de Janeiro 28625-550 Brasil</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29549.278674174428!2d-42.508502425022904!3d-22.215030153842736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x98278c12016d57%3A0x95e14aae5ff11e26!2sPedra%20do%20c%C3%A3o%20sentado!5e0!3m2!1spt-BR!2sbr!4v1714417641177!5m2!1spt-BR!2sbr" 
-                    width="400" 
-                    height="250" 
-                    style="border:0;" 
-                    llowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
-                    <h4>Funcionamento</h4>
-                    <p><em>De sexta-feira a domingo, de 09h às 15h.</em></p>
-                </div>
+      <div id="image1" class="selected" style="display: none">
+        <div class="CaoSentado">
+          <h3>Parque Ecológico Cão Sentado</h3>
+
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
             </div>
-
-            <div id="image2" class="selected" style="display:none;">
-                <div class="CasaSuica">
-                    <h3>Casa Suíça</h3>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="../img/friburgo/suica1.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../img/friburgo/suica2.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../img/friburgo/suica3.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../img/friburgo/suica4.jpg  " class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    <h4>Sobre</h4>
-                    <p>O complexo da Casa Suíça é um espaço vivo e dinâmico, que compreende a Frialp Queijaria e Chocolataria, 
-                      Memorial da Colonização Suíça, galeria de artes, em seus jardins o visitante encontra o Encanto e arte artesanato, 
-                      Museu de taxidermia, Loja do Porquinho e Ateliê Thaís Castro. Em breve novas atrações.</p>
-            
-                    <h4>Como Chegar</h4>
-                    <p>Estrada Friburgo/Teresópolis, Km 18 Conquista, Nova Friburgo, Estado do Rio de Janeiro 28630-250 Brasil</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.018462553117!2d-42.649420124709344!3d-22.23937827973037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x98224011f39361%3A0x52e3ecb14bed3f3b!2zQ2FzYSBTdcOtw6dhIChNZW1vcmlhbCBkYSBDb2xvbml6YcOnw6NvIFN1w63Dp2Ep!5e0!3m2!1spt-BR!2sbr!4v1714423805017!5m2!1spt-BR!2sbr" 
-                    width="600" 
-                    height="450" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
-                    <h4>Funcionamento</h4>
-                    <p><em>Sábado e Domingo</em>
-                        <td>
-                            <li>09h às 18h.</li>
-                        </td>
-                    </p>
-                </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../img/friburgo/caoSentado1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/friburgo/caoSentado2.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/friburgo/caoSentado3.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/friburgo/caoSentado4.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
             </div>
-            
-            <div id="image3" class="selected" style="display:none;">
-                <div class="CountryClub">
-                    <h3>Nova Friburgo Country Club</h3>
-                    
-                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="../img/friburgo/club1.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <img src="../img/friburgo/club2.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../img/friburgo/club3" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../img/friburgo/club4.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
-                    <h4>Sobre</h4>
-                    <p>O Nova Friburgo Country Clube é um lugar realmente muito bacana, com um paisagismo belíssimo, 
-                      três lagos com cisnes, patos e muitos pássaros ao redor, uma ilha muito gostosa ligada por uma ponte de ferro, 
-                      um bom bistrô/restaurante, boa infraestrutura com banheiros e estacionamento fácil.</p>
+          <h4>Sobre</h4>
+          <p>
+            Uma trilha ecológica de 40 minutos adentrando por varias cavernas e
+            grutas, uma fauna e flora incrível, até chegar na pedra do cão
+            sentado com seus 111 metros de altura, um lugar pra toda a família!
+          </p>
+          <small
+            >Acesse:
+            <a href="https://pedradocaosentado.com.br/">
+              https://pedradocaosentado.com.br/</a
+            >
+            para mais informações.</small
+          >
 
-                    <small>Acesse: <a href="https://www.nfcc.com.br/">https://www.nfcc.com.br/</a> para mais informações.</small>
-           
-                    <h4>Como Chegar</h4>
-                    <p>Avenida Conselheiro Julius Arp 140, Centro, Nova Friburgo, Estado do Rio de Janeiro 28623-000 Brasil</p>
+          <h4>Como Chegar</h4>
+          <p>
+            RJ-116, Km 92, Nova Friburgo, Estado do Rio de Janeiro 28625-550
+            Brasil
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29549.278674174428!2d-42.508502425022904!3d-22.215030153842736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x98278c12016d57%3A0x95e14aae5ff11e26!2sPedra%20do%20c%C3%A3o%20sentado!5e0!3m2!1spt-BR!2sbr!4v1714417641177!5m2!1spt-BR!2sbr"
+            width="400"
+            height="250"
+            style="border: 0"
+            llowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.640561472092!2d-42.539535024707575!3d-22.29160157969282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x978a65355e569b%3A0x936b08f6a08ea2bf!2sNova%20Friburgo%20Country%20Clube!5e0!3m2!1spt-BR!2sbr!4v1714424500633!5m2!1spt-BR!2sbr" 
-                    width="600" 
-                    height="450" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
-                    <h4>Funcionamento</h4>
-                    <p><em>Segunda à Domingo</em>
-                        <td>
-                            <li>08h às 17h.</li>
-                        </td>
-                    </p>
-                    <br />
-                </div>
+          <h4>Funcionamento</h4>
+          <p><em>De sexta-feira a domingo, de 09h às 15h.</em></p>
+        </div>
+      </div>
+
+      <div id="image2" class="selected" style="display: none">
+        <div class="CasaSuica">
+          <h3>Casa Suíça</h3>
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
             </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../img/friburgo/suica1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/friburgo/suica2.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/friburgo/suica3.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/friburgo/suica4.jpg  "
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <h4>Sobre</h4>
+          <p>
+            O complexo da Casa Suíça é um espaço vivo e dinâmico, que compreende
+            a Frialp Queijaria e Chocolataria, Memorial da Colonização Suíça,
+            galeria de artes, em seus jardins o visitante encontra o Encanto e
+            arte artesanato, Museu de taxidermia, Loja do Porquinho e Ateliê
+            Thaís Castro. Em breve novas atrações.
+          </p>
 
-            <p class="footerDireitos">Todos os direitos reservados®</p>
+          <h4>Como Chegar</h4>
+          <p>
+            Estrada Friburgo/Teresópolis, Km 18 Conquista, Nova Friburgo, Estado
+            do Rio de Janeiro 28630-250 Brasil
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.018462553117!2d-42.649420124709344!3d-22.23937827973037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x98224011f39361%3A0x52e3ecb14bed3f3b!2zQ2FzYSBTdcOtw6dhIChNZW1vcmlhbCBkYSBDb2xvbml6YcOnw6NvIFN1w63Dp2Ep!5e0!3m2!1spt-BR!2sbr!4v1714423805017!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <h4>Funcionamento</h4>
+          <p>
+            <em>Sábado e Domingo</em>
+            <td>
+              <li>09h às 18h.</li>
+            </td>
+          </p>
         </div>
-        <div class="containerContato">
-            <a class="fontTema linkContato" href="#">Contato</a>
+      </div>
+
+      <div id="image3" class="selected" style="display: none">
+        <div class="CountryClub">
+          <h3>Nova Friburgo Country Club</h3>
+
+          <div
+            id="carouselExampleDark"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active img-fluid" data-bs-interval="10000">
+                <img
+                  src="../img/friburgo/club1.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item img-fluid" data-bs-interval="2000">
+                <img
+                  src="../img/friburgo/club2.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item img-fluid">
+                <img
+                  src="../img/friburgo/club3.jpg "
+                  class="d-block w-100 img-fluid"
+                  alt="..." 
+                />
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item img-fluid">
+                <img
+                  src="../img/friburgo/club4.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <h4>Sobre</h4>
+          <p>
+            O Nova Friburgo Country Clube é um lugar realmente muito bacana, com
+            um paisagismo belíssimo, três lagos com cisnes, patos e muitos
+            pássaros ao redor, uma ilha muito gostosa ligada por uma ponte de
+            ferro, um bom bistrô/restaurante, boa infraestrutura com banheiros e
+            estacionamento fácil.
+          </p>
+
+          <small
+            >Acesse:
+            <a href="https://www.nfcc.com.br/">https://www.nfcc.com.br/</a> para
+            mais informações.</small
+          >
+
+          <h4>Como Chegar</h4>
+          <p>
+            Avenida Conselheiro Julius Arp 140, Centro, Nova Friburgo, Estado do
+            Rio de Janeiro 28623-000 Brasil
+          </p>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.640561472092!2d-42.539535024707575!3d-22.29160157969282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x978a65355e569b%3A0x936b08f6a08ea2bf!2sNova%20Friburgo%20Country%20Clube!5e0!3m2!1spt-BR!2sbr!4v1714424500633!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <h4>Funcionamento</h4>
+          <p>
+            <em>Segunda à Domingo</em>
+            <td>
+              <li>08h às 17h.</li>
+            </td>
+          </p>
+          <br />
         </div>
+      </div>
 
-        <script src="../js/subpaginas.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <p class="footerDireitos">Todos os direitos reservados®</p>
+    </div>
 
-    </body>
+    <a href="Contato.html"><div class="containerContato">
+      <p class="fontTema linkContato">Contato</p>
+    </div></a>
+    
+    <a href="index.html"><div class="Logo">   
+      <img
+      class="novoLogo"
+      src="../img/Logos/newLogo.png"
+      alt="Logo Montanha"
+      />
+    </div></a>
+
+    <script src="../js/subpaginas.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
