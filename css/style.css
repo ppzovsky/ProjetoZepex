@@ -6,6 +6,13 @@
 
 .linkContato{
   font-size: 22px;
+  text-decoration: none;
+  color: rgba(47, 61, 29, 0.9);
+}
+
+.linkContato:hover{
+    text-decoration: underline;
+    color: rgba(47, 61, 29, 0.9);
 }
 
 .homenagem {
@@ -19,7 +26,7 @@
   position: absolute;
   top: -36%;
   width: 300px;
-  z-index: 6;
+  z-index: 3;
 }
 
 .temaCentral {
@@ -99,7 +106,24 @@
   width: 10vw;
   height: 4.125rem;
   top: 30%;
-  right: 10%;
+  right: 14%;
+  background-color: rgb(233, 240, 224);
+  position: absolute;
+  transform: rotate(4deg);
+  transition: transform 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.sobreEquipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+  width: 10vw;
+  height: 4.125rem;
+  top: 30%;
+  right: 3%;
   background-color: rgb(233, 240, 224);
   position: absolute;
   transform: rotate(4deg);
@@ -170,7 +194,28 @@
   width: 16.25rem;;
 }
 
+.modal-header{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control{
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.452);
+  border-radius: 0;
+}
+
+.form-label{
+  font-weight: bold;
+}
+
+
+
+/*-----transform-----*/
 .containerFotos:hover{
+  transform: scale(1.1);
+}
+.sobreEquipe:hover{
   transform: scale(1.1);
 }
 .containerFotos02:hover{
@@ -182,4 +227,3 @@
 .containerContato:hover{
   transform: scale(1.1);
 }
-
