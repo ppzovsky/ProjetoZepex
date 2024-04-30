@@ -132,6 +132,13 @@
 }
 
 /*-----fotos-----*/
+.containerFotoTotal{
+  position: relative;
+  display: flex;
+  align-content: space-around;
+  width: 100vw;
+  height: 37.250rem;
+}
 .containerFotos {
   border-radius: 2px;
   box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.199);
@@ -226,4 +233,38 @@
 }
 .containerContato:hover{
   transform: scale(1.1);
+}
+
+@media  (max-width: 1150px) {
+  .containerFotoTotal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 25%;
+    top: 39.5%;
+    width: 50vw;
+    height: 50rem;
+    justify-content:space-evenly;
+  }
+
+  .containerFotos{
+    position: static;
+    margin: auto;
+    margin-bottom: -10px;
+  }
+  .containerFotos02{
+    position: static;
+    margin: auto;
+    margin-bottom: -10px;
+  }
+  .containerFotos03{
+    position: static;
+    margin: auto;
+  }
+  .container04{
+    height: 56.125rem;
+  }
+  .novoLogo{
+    top: -75px;
+  }
 }
