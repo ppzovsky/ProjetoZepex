@@ -4,13 +4,9 @@ function mostra(imageNumber) {
         images[i].style.display = "none";     
     }
     document.getElementById("image" + imageNumber).style.display = "block";
-
-    var allImages = document.querySelectorAll('.Fotos');
-        for (var i = 0; i < allImages.length; i++) {
-            if (i + 1 !== imageNumber) {
-                allImages[i].classList.add('blur');
-            } else {
-                allImages[i].classList.remove('blur');
-            }
-        }
 }
+
+document.getElementById('enviarModal').addEventListener('click', function() {
+//  Adicionar codigo que envie para um json
+    document.getElementById('formModal').reset();
+  });

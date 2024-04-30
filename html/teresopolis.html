@@ -278,8 +278,40 @@
             <p class="footerDireitos">Todos os direitos reservados®</p>
         </div>
         
-        <a href="Contato.html"><div class="containerContato">
-          <p class="fontTema linkContato">Contato</p>
+        <a href="#"><div class="containerContato">
+          <a class="fontTema linkContato" href="#" data-bs-toggle="modal" data-bs-target="#modalForm">Contato</a>
+        </div>
+    
+        <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Entre em Contato</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form id="formModal">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Seu Nome">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Seu Nome">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Digite sua Mensagem" rows="2"></textarea>
+                </div>
+              </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" id="enviarModal">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         </div></a>
         
         <a href="index.html"><div class="Logo">   
