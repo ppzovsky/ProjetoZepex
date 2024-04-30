@@ -25,16 +25,15 @@
     margin-bottom: 14px;
   }
   
-  /*-----video de fundo -----*/
+/*-----video de fundo -----*/
   .container01 {
     position: relative;
     min-height: 100%;
-    width: 99vw;
+    width: 105vw;
     z-index: 0;
     position: fixed;
-    align-items: end;
   }
-  .videoBack {
+  .videoBack {  
     min-width: 100%;
     z-index: 0;
   }
