@@ -3,75 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Galeria de Fotos</title>
+<title>Container com Som</title>
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-    }
-    .gallery {
-        display: flex;  
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px;
-    }
-    .gallery img {
+    #container {
         width: 200px;
         height: 200px;
-        margin: 10px;
-        border: 2px solid transparent;
-        transition: border-color 0.3s ease;
-    }
-    .gallery img:hover {
-        border-color: #333;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
-    }
-    .selected {
-        width: 100%;
-        transition: opacity 0.5s ease;
-    }
-    .blur {
-        filter: blur(1px);
     }
 </style>
 </head>
 <body>
-<div class="gallery">
-    <img src="../img/bate-e-volta-rio-de-janeiro-petropolis.webp" onclick="showImage(1)">
-    <img src="../img/bate-e-volta-rio-de-janeiro-petropolis.webp" onclick="showImage(2)">
-    <img src="../img/bate-e-volta-rio-de-janeiro-petropolis.webp" onclick="showImage(3)">
+<div id="container">
+    Clique Aqui
+    <audio id="clickSound" src="../vids/joker-cut.mp3"></audio>
 </div>
-<div id="image1" class="selected" style="display:none;">
-    <h2>Foto 1</h2>
-    <p>Conteúdo da Foto 1</p>
-</div>
-<div id="image2" class="selected" style="display:none;">
-    <h2>Foto 2</h2>
-    <p>Conteúdo da Foto 2</p>
-</div>
-<div id="image3" class="selected" style="display:none;">
-    <h2>Foto 3</h2>
-    <p>Conteúdo da Foto 3</p>
-</div>
-<script>
-    function showImage(imageNumber) {
-        var images = document.getElementsByClassName("selected");
-        for (var i = 0; i < images.length; i++) {
-            images[i].style.display = "none";
-        }
-        document.getElementById("image" + imageNumber).style.display = "block";
 
-        var allImages = document.querySelectorAll('.gallery img');
-        for (var i = 0; i < allImages.length; i++) {
-            if (i + 1 !== imageNumber) {
-                allImages[i].classList.add('blur');
-            } else {
-                allImages[i].classList.remove('blur');
-            }
-        }
-    }
+<script>
+    document.getElementById('container').addEventListener('click', function() {
+        var audio = document.getElementById('clickSound');
+        audio.play();
+    });
 </script>
 </body>
 </html>
+
