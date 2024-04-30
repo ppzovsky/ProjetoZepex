@@ -282,10 +282,53 @@
     margin: auto;
   }
   .container04{
-    height: 56.125rem;
+    height: 57.125rem;
   }
   .novoLogo{
     top: -85px;
+  }
+
+  .sobreEquipe {
+    border-radius: 0px 0px 8px 8px;
+    top: 67.5%;
+    right: 7%;
+  }
+
+  .containerContato{
+    top: 34%;
+    right: 7%;
+  }
+}
+
+@media  (max-width: 435px) {
+  .containerFotoTotal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 38.5%;
+    width:20rem;
+    height: 65rem;
+  }
+
+  .containerFotos{
+    position: static;
+    margin: auto;
+    margin-bottom: -100px;
+  }
+  .containerFotos02{
+    position: static;
+    margin: auto;
+    margin-bottom: -100px;
+  }
+  .containerFotos03{
+    position: static;
+    margin: auto;
+  }
+  .container04{
+    height: 67.125rem;
+  }
+  .novoLogo{
+    top: -70px;
   }
 
   .sobreEquipe {
@@ -296,7 +339,7 @@
     border-radius: 0px 0px 8px 8px;
     width: 10vw;
     height: 4.125rem;
-    top: 72.5%;
+    top: 70.5%;
     right: 7%;
     background-color: rgb(233, 240, 224);
     position: absolute;
