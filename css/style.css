@@ -261,7 +261,7 @@
     display: flex;
     flex-direction: column;
     left: 25%;
-    top: 39.5%;
+    top: 38.5%;
     width: 50vw;
     height: 50rem;
     justify-content:space-evenly;
@@ -270,12 +270,12 @@
   .containerFotos{
     position: static;
     margin: auto;
-    margin-bottom: -10px;
+    margin-bottom: -28px;
   }
   .containerFotos02{
     position: static;
     margin: auto;
-    margin-bottom: -10px;
+    margin-bottom: -28px;
   }
   .containerFotos03{
     position: static;
@@ -285,6 +285,27 @@
     height: 56.125rem;
   }
   .novoLogo{
-    top: -75px;
+    top: -85px;
+  }
+
+  .sobreEquipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 8px 8px;
+    width: 10vw;
+    height: 4.125rem;
+    top: 72.5%;
+    right: 7%;
+    background-color: rgb(233, 240, 224);
+    position: absolute;
+    transform: rotate(4deg);
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+  }
+
+  .containerContato{
+    right: 7%;
   }
 }
