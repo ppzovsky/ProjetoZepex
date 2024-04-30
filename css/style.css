@@ -18,13 +18,13 @@
 .homenagem {
   position: absolute;
   color: rgb(233, 240, 224);
-  right: 5%;
-  top: 51%;
+  right: 1%;
+  top: 69%;
 }
 
 .novoLogo {
   position: absolute;
-  top: -36%;
+  top: -34%;
   width: 300px;
   z-index: 3;
 }
@@ -32,8 +32,8 @@
 .temaCentral {
   text-align: center;
   background-color: rgb(233, 240, 224);
-  margin-top: 10px;
-  height: 30px;
+  margin-top: 5px;
+  height: 35px;
   border-radius: 20px;
   padding: 0 20px;
   font-family: "Vujahday Script", cursive;
@@ -90,7 +90,7 @@
   align-items: center;
   border-radius: 8px;
   width: 50vw;
-  height: 26.125rem;
+  height: 35.125rem;
   top: 25%;
   left: 25%;
   background-color: rgb(233, 240, 224);
@@ -98,6 +98,7 @@
   z-index: 2;
 }
 .containerContato {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,10 +106,9 @@
   border-radius: 8px 8px 0 0;
   width: 10vw;
   height: 4.125rem;
-  top: 30%;
+  top: 33%;
   right: 14%;
   background-color: rgb(233, 240, 224);
-  position: absolute;
   transform: rotate(4deg);
   transition: transform 0.3s ease-in-out;
   z-index: 2;
@@ -122,7 +122,7 @@
   border-radius: 8px 8px 0 0;
   width: 10vw;
   height: 4.125rem;
-  top: 30%;
+  top: 33%;
   right: 3%;
   background-color: rgb(233, 240, 224);
   position: absolute;
@@ -139,9 +139,8 @@
 .containerFotoTotal{
   position: relative;
   display: flex;
-  align-content: space-around;
   width: 100vw;
-  height: 37.250rem;
+  height: 43.950rem;
 }
 .containerFotos {
   border-radius: 2px;
