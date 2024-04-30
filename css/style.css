@@ -11,9 +11,9 @@
 }
 
 .linkContato:hover{
-    text-decoration: underline;
-    color: rgba(47, 61, 29, 0.9);
+  color: rgba(47, 61, 29, 0.9);
 }
+
 
 .homenagem {
   position: absolute;
@@ -131,6 +131,10 @@
   z-index: 2;
 }
 
+.linkContato{
+  position: relative;
+}
+
 /*-----fotos-----*/
 .containerFotoTotal{
   position: relative;
@@ -216,9 +220,26 @@
   font-weight: bold;
 }
 
-
-
 /*-----transform-----*/
+
+.linkContato::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background: rgba(47, 61, 29, 0.9);
+  transition: width .2s;
+}
+
+.linkContato:hover::after{
+  border-radius: 5px;
+  width: 100%;
+  color: rgba(47, 61, 29, 0.9);
+}
+
+
 .containerFotos:hover{
   transform: scale(1.1);
 }
