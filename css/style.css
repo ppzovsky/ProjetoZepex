@@ -49,7 +49,8 @@
 .novoLogo {
   position: absolute;
   top: -34%;
-  width: 300px;
+  left: 22.5%;
+  width: 55%;
   z-index: 3;
 }
 
