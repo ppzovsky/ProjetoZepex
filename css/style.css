@@ -133,7 +133,7 @@
   border-radius: 8px 8px 0 0;
   width: 10vw;
   height: 4.125rem;
-  top: 27.5%;
+  top: 26%;
   right: 14%;
   background-color: rgb(233, 240, 224);
   transform: rotate(4deg);
@@ -151,7 +151,7 @@
   font-size: x-large;
   width: 10vw;
   height: 4.125rem;
-  top: 27.5%;
+  top: 26%;
   right: 3%;
   background-color: rgb(233, 240, 224);
   position: absolute;
@@ -170,8 +170,8 @@
   box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.199);
   display: flex;
   flex-direction: column;
-  width: 24.5rem;
-  height: 17.5rem;
+  width: 22.5rem;
+  height: 14.5rem;
   top: 43%;
   left: 10%;
   background-color: rgb(233, 240, 224);
@@ -179,11 +179,12 @@
   transform: rotate(-4deg);
   z-index: 4;
   transition: transform 0.3s ease-in-out;
-  font-size: xx-large;
+  font-size: x-large;
 }
 .img01 {
-  max-height: 11.5rem;
+  max-height: 10.5rem;
   margin: 0.625rem;
+  width: 21.2rem;
 }
 
 .containerFotos02 {
@@ -191,8 +192,8 @@
   box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.199);
   display: flex;
   flex-direction: column;
-  width: 24.5rem;
-  height: 17.5rem;
+  width: 22.5rem;
+  height: 14.5rem;
   top:  43%;
   left: 40%;
   background-color: rgb(233, 240, 224);
@@ -200,12 +201,12 @@
   transform: rotate(4deg);
   z-index: 4;
   transition: transform 0.3s ease-in-out;
-  font-size: xx-large;
+  font-size: x-large;
 }
 .img02 {
-  max-height: 11.5rem;
+  max-height: 10.5rem;
   margin: 0.625rem;
-  width: 23.2rem;
+  width: 21.2rem;
 }
 
 .containerFotos03 {
@@ -213,8 +214,8 @@
   box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.199);
   display: flex;
   flex-direction: column;
-  width: 24.5rem;
-  height: 17.5rem;
+  width: 22.5rem;
+  height: 14.5rem;
   top: 43%;
   right: 10%;
   background-color: rgb(233, 240, 224);
@@ -222,12 +223,12 @@
   transform: rotate(-4deg);
   z-index: 4;
   transition: transform 0.3s ease-in-out;
-  font-size: xx-large;
+  font-size: x-large;
 }
 .img03 {
-  max-height: 11.5rem;
+  max-height: 10.5rem;
   margin: 0.625rem;
-  width: 23.2rem;
+  width: 21.2rem;
 }
 
 .modal-header{
