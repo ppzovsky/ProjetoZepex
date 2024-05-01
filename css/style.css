@@ -18,8 +18,32 @@
 .homenagem {
   position: absolute;
   color: rgb(233, 240, 224);
-  right: 1%;
-  top: 69%;
+  right: 5%;
+  bottom: 6%;
+  text-decoration: none;
+  transition: ease-in-out .3s;
+  border-radius: 3px;
+}
+.homenagem:hover{
+  background-color: rgb(233, 240, 224);
+  color: rgba(47, 61, 29, 0.9);
+  transform: scale(1.7);
+}
+.homenagem::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background: rgba(47, 61, 29, 0.9);
+  transition: width .6s;
+}
+
+.homenagem:hover::after{
+  border-radius: 5px;
+  width: 100%;
+  color: rgba(47, 61, 29, 0.9);
 }
 
 .novoLogo {
@@ -32,8 +56,8 @@
 .temaCentral {
   text-align: center;
   background-color: rgb(233, 240, 224);
-  margin-top: 5px;
-  height: 35px;
+  margin-top: 10px;
+  height: 40px;
   border-radius: 20px;
   padding: 0 20px;
   font-family: "Vujahday Script", cursive;
@@ -46,7 +70,7 @@
 }
 
 .footerDireitos {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 /*-----video de fundo -----*/
@@ -59,15 +83,16 @@
 }
 
 .videoBack {
-  max-height: 100%;
+  position: fixed;
+  min-width: 100%;
   z-index: 0;
 }
 
 /*-----retangulos decorativos-----*/
 .container02 {
   width: 100vw;
-  height: 20.575rem;
-  top: 35%;
+  height: 54%;
+  top: 30%;
   background-color: rgba(47, 61, 29, 0.9);
   position: absolute;
   z-index: 1;
@@ -77,11 +102,12 @@
   justify-content: center;
   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.250);
   width: 100vw;
-  height: 16.625rem;
-  top: 40%;
+  height: 45%;
+  top: 34%;
   background-color: rgb(71, 91, 42);
   position: absolute;
   z-index: 3;
+  font-optical-sizing: auto;
 }
 .container04 {
   display: flex;
@@ -89,9 +115,9 @@
   justify-content: end;
   align-items: center;
   border-radius: 8px;
-  width: 50vw;
-  height: 35.125rem;
-  top: 25%;
+  width: 50%;
+  height: 65%;
+  top: 22%;
   left: 25%;
   background-color: rgb(233, 240, 224);
   position: absolute;
@@ -101,17 +127,19 @@
   position: absolute;
   display: flex;
   flex-direction: column;
+  font-size: x-large;
   justify-content: center;
   align-items: center;
   border-radius: 8px 8px 0 0;
   width: 10vw;
   height: 4.125rem;
-  top: 33%;
+  top: 27.5%;
   right: 14%;
   background-color: rgb(233, 240, 224);
   transform: rotate(4deg);
   transition: transform 0.3s ease-in-out;
   z-index: 2;
+  cursor: pointer;
 }
 
 .sobreEquipe {
@@ -120,9 +148,10 @@
   justify-content: center;
   align-items: center;
   border-radius: 8px 8px 0 0;
+  font-size: x-large;
   width: 10vw;
   height: 4.125rem;
-  top: 33%;
+  top: 27.5%;
   right: 3%;
   background-color: rgb(233, 240, 224);
   position: absolute;
@@ -135,30 +164,25 @@
   position: relative;
 }
 
-/*-----fotos-----*/
-.containerFotoTotal{
-  position: relative;
-  display: flex;
-  width: 100vw;
-  height: 43.950rem;
-}
+/*-----fotos-----*/ 
 .containerFotos {
   border-radius: 2px;
   box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.199);
   display: flex;
   flex-direction: column;
-  width: 17.5rem;
-  height: 12.5rem;
-  top: 49%;
+  width: 24.5rem;
+  height: 17.5rem;
+  top: 43%;
   left: 10%;
   background-color: rgb(233, 240, 224);
   position: absolute;
   transform: rotate(-4deg);
   z-index: 4;
   transition: transform 0.3s ease-in-out;
+  font-size: xx-large;
 }
 .img01 {
-  max-height: 8.125rem;
+  max-height: 11.5rem;
   margin: 0.625rem;
 }
 
@@ -167,20 +191,21 @@
   box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.199);
   display: flex;
   flex-direction: column;
-  width: 17.5rem;
-  height: 12.5rem;
-  top:  49%;
+  width: 24.5rem;
+  height: 17.5rem;
+  top:  43%;
   left: 40%;
   background-color: rgb(233, 240, 224);
   position: absolute;
   transform: rotate(4deg);
   z-index: 4;
   transition: transform 0.3s ease-in-out;
+  font-size: xx-large;
 }
 .img02 {
-  height: 8.125rem;
+  max-height: 11.5rem;
   margin: 0.625rem;
-  width: 16.25rem;
+  width: 23.2rem;
 }
 
 .containerFotos03 {
@@ -188,20 +213,21 @@
   box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.199);
   display: flex;
   flex-direction: column;
-  width: 17.5rem;
-  height: 12.5rem;
-  top: 49%;
+  width: 24.5rem;
+  height: 17.5rem;
+  top: 43%;
   right: 10%;
   background-color: rgb(233, 240, 224);
   position: absolute;
   transform: rotate(-4deg);
   z-index: 4;
   transition: transform 0.3s ease-in-out;
+  font-size: xx-large;
 }
 .img03 {
-  max-height: 8.125rem;
+  max-height: 11.5rem;
   margin: 0.625rem;
-  width: 16.25rem;;
+  width: 23.2rem;
 }
 
 .modal-header{
