@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .linkContato{
@@ -48,7 +50,7 @@
 
 .novoLogo {
   position: absolute;
-  top: -34%;
+  top: -31%;
   left: 22.5%;
   width: 55%;
   z-index: 3;
@@ -78,7 +80,7 @@
 .container01 {
   position: relative;
   min-height: 100%;
-  width: 99vw;
+  width: 101vw;
   z-index: 0;
   position: fixed;
 }
@@ -232,7 +234,7 @@
   width: 21.2rem;
 }
 
-.modal-header{
+/* .modal-header{
   display: flex;
   flex-direction: column;
 }
@@ -245,7 +247,7 @@
 
 .form-label{
   font-weight: bold;
-}
+} */
 
 /*-----transform-----*/
 
@@ -284,6 +286,18 @@
 }
 
 @media  (max-width: 1150px) {
+
+  .container01{
+    position: static;
+    height: 103.125rem;
+    background: linear-gradient(to top, rgb(255, 255, 255) 5%, rgba(47, 61, 29) 40%);
+  }
+
+  .videoBack{
+    width: 100vw;
+    position: static;
+  }
+
   .containerFotoTotal{
     position: absolute;
     display: flex;
@@ -291,7 +305,7 @@
     left: 25%;
     top: 38.5%;
     width: 50vw;
-    height: 50rem;
+    height: 70rem;
     justify-content:space-evenly;
   }
 
@@ -299,84 +313,182 @@
     position: static;
     margin: auto;
     margin-bottom: -28px;
+    width: 30rem;
+    height: 20rem;
+    font-size: xx-large;
   }
+
+  .img01 {
+    max-height: 18.5rem;
+    margin: 0.625rem;
+    width: 28.7rem;
+  }
+  
   .containerFotos02{
     position: static;
     margin: auto;
     margin-bottom: -28px;
+    width: 30rem;
+    height: 20rem;
+    font-size: xx-large;
   }
+  .img02 {
+    max-height: 14.5rem;
+    margin: 0.625rem;
+    width: 28.7rem;
+  }
+
   .containerFotos03{
     position: static;
     margin: auto;
+    width: 30rem;
+    height: 20rem;
+    font-size: xx-large;
   }
+
+  .img03 {
+    max-height: 14.5rem;
+    margin: 0.625rem;
+    width: 28.7rem;
+  }
+
   .container04{
-    height: 57.125rem;
+    height: 85rem;
   }
+
   .novoLogo{
-    top: -85px;
+    top: -10%;
+    width: 70%;
+    left: 15%;
   }
 
   .sobreEquipe {
     border-radius: 0px 0px 8px 8px;
-    top: 67.5%;
+    top: 78.5%;
     right: 7%;
   }
 
   .containerContato{
-    top: 34%;
+    top: 29%;
     right: 7%;
   }
 }
+@media  (max-width: 1000px) {
 
-@media  (max-width: 435px) {
+  .container01{
+    position: static;
+    height: 70rem;
+    background: linear-gradient(to top, rgb(255, 255, 255) 5%, rgba(47, 61, 29) 20%);
+  }
+
+  .videoBack{
+    width: 100vw;
+    position: static;
+  }
+
   .containerFotoTotal{
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 38.5%;
-    width:20rem;
-    height: 65rem;
+    left: 15%;
+    top: 34%;
+    width: 70%;
+    height: 48rem;
+    justify-content:space-evenly;
   }
 
   .containerFotos{
     position: static;
     margin: auto;
-    margin-bottom: -100px;
+    margin-bottom: -28px;
+    width: 17rem;
+    height: 11rem;
+    font-size: x-large;
+  } 
+
+  .img01 {
+    max-height: 8rem;
+    margin: 0.625rem;
+    width: 16rem;
   }
+  
   .containerFotos02{
     position: static;
     margin: auto;
-    margin-bottom: -100px;
+    margin-bottom: -28px;
+    width: 17rem;
+    height: 11rem;
+    font-size: x-large;
   }
+  .img02 {
+    max-height: 8rem;
+    margin: 0.625rem;
+    width: 16rem;
+  }
+
   .containerFotos03{
     position: static;
     margin: auto;
+    width: 17rem;
+    height: 11rem;
+    font-size: x-large;
   }
+
+  .img03 {
+    max-height: 8rem;
+    margin: 0.625rem;
+    width: 16rem;
+  }
+
   .container04{
-    height: 67.125rem;
+    height: 55rem;
+    width: 70%;
+    left: 15%;
   }
+
   .novoLogo{
-    top: -70px;
+    top: -23%;
+    width: 55%;
+    left: -13%;
   }
 
   .sobreEquipe {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border-radius: 0px 0px 8px 8px;
-    width: 10vw;
-    height: 4.125rem;
-    top: 70.5%;
-    right: 7%;
-    background-color: rgb(233, 240, 224);
-    position: absolute;
-    transform: rotate(4deg);
-    transition: transform 0.3s ease-in-out;
-    z-index: 2;
+    top: -1%;
+    width: 5rem;
+    right: 30%;
   }
 
   .containerContato{
+    border-radius: 0px 0px 8px 8px;
+    top: -1%;
     right: 7%;
+    width: 5rem;
+  }
+  .temaCentral{
+    position: absolute;
+    top: -20%;
+    font-size: x-large;
+    margin: 0;
+    padding-top: 10px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    width: 70%;
+  }
+  .homenagem{
+    top: 10%;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);  
+    font-size: x-small;
+    right: 1%;
+    display: block;
+    height: 130px;
+  }
+  .homenagem:hover{
+    color: rgb(233, 240, 224);
+    background-color: transparent;
+    transform: scale(1.05); 
+    transform: rotate(180deg); 
   }
 }
