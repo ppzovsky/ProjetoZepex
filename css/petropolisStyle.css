@@ -1,13 +1,14 @@
-  * {
+    * {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
   }
 
 .temaCentral {
+    position: absolute;
     text-align: center;
     background-color: rgb(71, 91, 42);
     color: rgb(233, 240, 224);
-    margin-top: 10px;
+    top: 10px;
     height: 30px;
     border-radius: 20px;
     padding: 0 20px;
@@ -28,14 +29,15 @@
 /*-----video de fundo -----*/
   .container01 {
     position: relative;
-    min-height: 100%;
+    min-height: 100vh;
     width: 105vw;
     z-index: 0;
     position: fixed;
   }
   .videoBack {  
     position: fixed;
-    min-width: 100%;
+    min-width: 100vw;
+    min-height: 10vh;
     z-index: 0;
   }
   
@@ -50,27 +52,39 @@
   }
   .container03 {
     display: flex;
+    display: wrap;
+    flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-around;
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.250);
     width: 100vw;
-    height: 45%;
+    min-height: 45%;
+    height: auto;
     top: 34%;
+    padding-top: 4%;
     background-color: rgb(233, 240, 224);
     position: absolute;
     z-index: 3;
-    font-optical-sizing: auto;
   }
 
   .Logo {
     display: flex;
     position: absolute;
-    top: 2%;
+    top: 3%;
+    left: 50%;
     z-index: 6;
-    width: 30%;
-    height: 30%;
+    height: 15rem;
     justify-content: center;
-    left: 35%;
   } 
+
+  .novoLogo{
+    position: absolute;
+    height: 13vw;
+  }
+
+  .novoLogo:hover{
+    filter: invert(150%);
+  }
 
   .container03 h2{
     font-size: 25px;
@@ -92,7 +106,8 @@
     position: absolute;
     z-index: 2;
     color: rgb(233, 240, 224) ;
-    padding-top: 28%;
+    padding-top: 65vh;
+
   }
 
   .container04 h4{
@@ -104,13 +119,19 @@
   }
 
  .selected{
-    
     margin-bottom: 14px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     text-align: center;
     padding-left: 20px;
     padding-right:20px;
+  }
+
+  .selected iframe{
+    width: 90%;
+    height: 35vh;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.199);
   }
 
   .containerContato {
@@ -167,88 +188,109 @@
     border-radius: 2px;
     box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.199);
     display: flex;
+    align-items: center;
     flex-direction: column;
-    width: 22.5rem;
-    height: 14.5rem;
-    top: 43%;
-    left: 10%;
+    width: 25vw;
+    height: 18vw;
     background-color:  rgba(47, 61, 29, 0.9);
     color: rgb(233, 240, 224);
-    position: absolute;
     transform: rotate(-4deg);
-    z-index: 4;
     transition: 0.3s ease-in-out;
     cursor: pointer;
     font-size: x-large;
+    padding-top: 0.5rem;
   }
 
   .containerFotos:hover{
     transform: scale(1.2);
   }
-  .containerFotos02:hover{
-    transform: scale(1.2);
-  }
-  .containerFotos03:hover{
-    transform: scale(1.2);
-  }
 
-  .img01 {
-    max-height: 10.5rem;
-    margin: 0.625rem;
-    width: 21.2rem;
+  .containerFotos img {
+    height: 14vw;
+    width: 23.5vw;
   }
   
-  .containerFotos02 {
-    border-radius: 2px;
-    box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.199);
-    display: flex;
-    flex-direction: column;
-    width: 22.5rem;
-    height: 14.5rem;
-    top: 43%;
-    left: 40%;
-    background-color:  rgba(47, 61, 29, 0.9);
-    color: rgb(233, 240, 224);
-    position: absolute;
-    transform: rotate(4deg);
-    z-index: 4;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-    font-size: x-large;
-  }
-  .img02 {
-    max-height: 10.5rem;
-    margin: 0.625rem;
-    width: 21.2rem;
-  }
-  
-  .containerFotos03 {
-    border-radius: 2px;
-    box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.199);
-    display: flex;
-    flex-direction: column;
-    width: 22.5rem;
-    height: 14.5rem;
-    top: 43%;
-    right: 10%;
-    background-color:  rgba(47, 61, 29, 0.9);
-    color: rgb(233, 240, 224);
-    position: absolute;
-    transform: rotate(-4deg);
-    z-index: 4;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-    font-size: x-large;
-  }
-
-  .img03 {
-    max-height: 10.5rem;
-    margin: 0.625rem;
-    width: 21.2rem;
-  }
   .carousel-item img {
     object-fit: cover; 
-    height: 465px;
+    height: 30vw;
+  }
+
+  @media (min-height: 720px){
+    .containerContato{
+      top: 28%;
+      height: 10rem;
+      padding-bottom: 7rem;
+      font-size: xx-large;
+    }
+  }
+
+  @media (max-width: 1080px ){
+    .Logo{
+      top: 2%;
+      left: 18%;
+    }
+
+    .novoLogo{
+      position: absolute;
+      width: 7rem;
+      height: 7rem;
+    }
+    
+    .containerFotos{
+      margin: 20px;
+    }
+
+    .containerContato{
+      border-radius: 0px 0px 8px 8px;
+      top:-1%;
+      height: 5rem;
+      width: 8rem;
+      padding: 0;
+    }
+
+    .selected iframe{
+      height: 15rem;
+    }
+
+    .temaCentral{
+      position: absolute;
+      top: -12%;
+      font-size: small;
+      margin: 0;
+      padding-top: 10px;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0);
+      box-shadow: none;
+      width: 70%;
+    }
+
+    .containerFotos{
+      width: 22rem;
+      height: 15rem;
+    }
+    .containerFotos img{
+      width: 21rem;
+      height: 12rem;
+      max-height: 30rem;
+    }
+
+    .container04{
+      padding-top: 80vw;
+      width: 80%;
+      left: 10%;
+    }
+  }
+  
+  @media (max-width: 905px){
+    .container04{
+      padding-top: 70vh;
+    }
+  }
+
+  @media (max-width: 784px){
+    .container04{
+      padding-top: 137%;
+    }
   }
 
   
