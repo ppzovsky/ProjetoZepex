@@ -108,6 +108,10 @@
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.322);
   transition: transform 0.4s ease-in-out;
 }
+.caixaFotos span{
+  font-family: "Vujahday Script", cursive;
+  font-size: x-large;
+}
 .imgInterna{
   width: 97%;
   height: 8rem;
@@ -132,6 +136,9 @@
 .novoLogo{
   margin-top: -75px;
   width: 230px;
+}
+.novoLogo img:hover{
+  filter: invert(100%);
 }
 .homenagem{
   position: absolute;

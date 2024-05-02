@@ -2,9 +2,15 @@
     display: flex;
     position: absolute;
     z-index: 8;
-    top: 50px;
-    left: 100px;
+    top: 20px;
+    left: 30px;
   }
+
+  .navigation span{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
   .night-mode {
 /* Background color for night mode */
 background-color: #222;
@@ -28,8 +34,36 @@ h2 {
 .novoLogo img:hover {
   filter: none; /* Disable hover effect on logo */
 }
-.container04{
-  background-color: #1E222C;
+.primeiroContainer{
+    background-color: #272E43;
+}
+.segundoContainer{
+  background-color: #394261;
+}
+.terceiroContainer{
+    background-color: #1E222C;
+}
+.caixaFotos{
+    background-color: #1E222C;
+}
+.temaCentral{
+    background-color: #1E222C;
+}
+.etiquetaNav{
+    background-color: #1E222C;
+}
+.novoLogo{
+    filter: grayscale(100%);
+}
+.novoLogo img:hover{
+    filter: invert(100%);
+}
+.containerPrincipal{
+    background-color: #222;
+}
+.containerPrincipal video{
+    filter: grayscale(100%);
+    opacity: 30%;
 }
 }
 

@@ -35,7 +35,7 @@ form.addEventListener('submit', async function(event) {
 
 async function sendFormToApi(formData) {
     const url = "https://6632937ac51e14d69564d9af.mockapi.io/test/v1";
-    const endpoint = "/form";
+    const endpoint = "/agendamento";
 
     const response = await fetch(url+endpoint, {
     method: "POST",
