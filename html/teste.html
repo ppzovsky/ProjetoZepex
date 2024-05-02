@@ -1,112 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Container com Som</title>
-<style>
-    #container {
-        width: 200px;
-        height: 200px;
-        background-color: lightblue;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>ZEPEX Expedições</title>
+  </head>
+  <style>
+    .navigation{
+      display: flex;
+      position: absolute;
+      z-index: 8;
+      top: 50px;
+      left: 100px;
     }
-</style>
-</head>
-<body>
-<div id="container">
-    Clique Aqui
-    <audio id="clickSound" src="../vids/joker-cut.mp3"></audio>
-</div>
-<div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Entre em Contato</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body" id="modalbody">
-          <form id="formModal">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label" >Nome:</label>
-              <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Seu Nome">
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Email:</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Seu Email">
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Digite sua Mensagem" rows="2"></textarea>
-            </div>
-            <h5 class="modal-title" id="exampleModalLabel">Quais os passeios desejados?</h5>
-                <div class="form-check form-check-inline"  id="passeio">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Museu Imperial">
-                  <label class="form-check-label" for="inlineCheckbox1">Museu Imperial</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Trilha do Castelinho">
-                  <label class="form-check-label" for="inlineCheckbox2">Trilha do Castelinho</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Palácio Quitandinha">
-                  <label class="form-check-label" for="inlineCheckbox3">Palácio Quitandinha</label>
-                </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-              <button type="submit" class="btn btn-primary" id="enviarModal" >Enviar</button>
-            </div>
-        </form>
+    .night-mode {
+  /* Background color for night mode */
+  background-color: #222;
+
+  /* Text color for night mode */
+  color: #ddd;
+
+  /* Adjust other styles as needed */
+  h2 {
+    color: #eee; /* Brighter heading color */
+  }
+  .containerFotos img {
+    filter: grayscale(100%); /* Make images grayscale */
+  }
+  .linkContato {
+    color: #ddd; /* Adjust link color */
+  }
+  .linkContato:hover {
+    color: #fff; /* Adjust hover color */
+  }
+  .novoLogo img:hover {
+    filter: none; /* Disable hover effect on logo */
+  }
+  .container04{
+    background-color: #1E222C;
+  }
+}
+
+  </style>
+  <body>
+    <div class="container01">
+      <video
+        class="videoBack"
+        src="../vids/backGroundVid.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <a
+        class="fontTema homenagem"
+        target="_blank"
+        href="https://pixabay.com/users/matthias_groeneveld-4535957/"
+        >Matthias Groeneveld - Pixabay</a
+      >
+    </div>
+    
+    <div class="container02"></div>
+
+    <div class="container03">
+      <h2 class="temaCentral fontTema">
+        Conheça o que há de melhor na Região Serrana
+      </h2>
+    </div>
+
+      <div class="container04">
+        <a class="novoLogo" href="#">
+          <img
+            class="novoLogo"
+            src="../img/Logos/newLogo.png"
+            alt="Logo Montanha"
+          />
+        </a>
+        <p class="footerDireitos">Todos os direitos reservados®</p>
+      </div>
+      
+    <div class="containerContato">
+      <a class="fontTema linkContato" href="#" data-bs-toggle="modal" data-bs-target="#modalForm">Contato</a>
+    </div>
+    <div class="sobreEquipe">
+      <a class="fontTema linkContato" href="Contato.html">Sobre</a>
+    </div>
+
+    <!-- /*-----modal----*/ -->
+    <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Entre em Contato</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modalbody">
+            <form id="formModal">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label" >Nome:</label>
+                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Seu Nome">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Seu Email">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Digite sua Mensagem" rows="2"></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="submit" class="btn btn-primary" id="enviarModal" >Enviar</button>
+              </div>
+          </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-<script>
-    const form = document.querySelector('#modalbody');
-        
-        console.log(form)
-        form.addEventListener('submit', async function(event) {
-          event.preventDefault();
-          console.log("entrou");
-          const nome = document.getElementById('exampleFormControlInput2').value;
-          const email = document.getElementById('exampleFormControlInput1').value;
-          const mensagem = document.getElementById('exampleFormControlTextarea1').value;
-          
-          const passeios = [];
-          const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-          for (const checkbox of checkboxes) {
-            passeios.push(checkbox.value);
-          }
 
-          const formData = {
-            nome,
-            email,
-            mensagem,
-            passeios
-          };
-              
-          sendFormToApi(formData);    
-          console.log(form);
-        })
-        
-        async function sendFormToApi(formData) {
-          const url = "https://6632937ac51e14d69564d9af.mockapi.io/test/v1";
-          const endpoint = "/form";
-        
-          const response = await fetch(url+endpoint, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json"
-            },
-            body: JSON.stringify(formData)
-          })
-          console.log(response);
-          document.getElementById('formModal').reset();
-        }
-</script>
-</body>
+      <div class="containerFotoTotal">
+        <div class="containerFotos">
+          <a class="ajusteFoto01" href="teresopolis.html"
+            ><img
+              class="img01"
+              src="../img/teresopolis/caminhadaParnaso03.jpg"
+              alt="serra dos orgaos" /></a
+          ><span class="fontTema" style="text-align: center">Teresópolis</span>
+        </div>
+
+        <div class="containerFotos02">
+          <a class="ajusteFoto02" href="friburgo.html"
+            ><img
+              class="img02"
+              src="../img/friburgo/caoSentado.jpg"
+              alt="montanha cao sentado" /></a
+          ><span class="fontTema" style="text-align: center">Friburgo</span>
+        </div>
+
+        <div class="containerFotos03">
+          <a class="ajusteFoto03" href="petropolis.html"
+            ><img
+              class="img03"
+              src="../img/petropolis/palacioDeCristal.png"
+              alt="vista da montanha" /></a
+          ><span class="fontTema" style="text-align: center">Petrópolis</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <button id="nightModeButton">Night Mode</button>
+    </div>
+
+    <script src="../js/formularioContato.js"></script>
+    <script>
+      const nightModeButton = document.getElementById('nightModeButton');
+      const body = document.body; // Or target a specific container element
+
+      nightModeButton.addEventListener('click', function() {
+        body.classList.toggle('night-mode'); // Toggle the night-mode class on/off
+      });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
-
