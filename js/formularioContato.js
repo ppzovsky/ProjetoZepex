@@ -30,4 +30,5 @@ async function sendFormToApi(formData) {
     body: JSON.stringify(formData)
   })
   console.log(response);
+  document.getElementById('formModal').reset();
 }

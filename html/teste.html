@@ -21,12 +21,91 @@
     Clique Aqui
     <audio id="clickSound" src="../vids/joker-cut.mp3"></audio>
 </div>
-
+<div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre em Contato</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modalbody">
+          <form id="formModal">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label" >Nome:</label>
+              <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Seu Nome">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Seu Email">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Digite sua Mensagem" rows="2"></textarea>
+            </div>
+            <h5 class="modal-title" id="exampleModalLabel">Quais os passeios desejados?</h5>
+                <div class="form-check form-check-inline"  id="passeio">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Museu Imperial">
+                  <label class="form-check-label" for="inlineCheckbox1">Museu Imperial</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Trilha do Castelinho">
+                  <label class="form-check-label" for="inlineCheckbox2">Trilha do Castelinho</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Palácio Quitandinha">
+                  <label class="form-check-label" for="inlineCheckbox3">Palácio Quitandinha</label>
+                </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <button type="submit" class="btn btn-primary" id="enviarModal" >Enviar</button>
+            </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
 <script>
-    document.getElementById('container').addEventListener('click', function() {
-        var audio = document.getElementById('clickSound');
-        audio.play();
-    });
+    const form = document.querySelector('#modalbody');
+        
+        console.log(form)
+        form.addEventListener('submit', async function(event) {
+          event.preventDefault();
+          console.log("entrou");
+          const nome = document.getElementById('exampleFormControlInput2').value;
+          const email = document.getElementById('exampleFormControlInput1').value;
+          const mensagem = document.getElementById('exampleFormControlTextarea1').value;
+          
+          const passeios = [];
+          const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+          for (const checkbox of checkboxes) {
+            passeios.push(checkbox.value);
+          }
+
+          const formData = {
+            nome,
+            email,
+            mensagem,
+            passeios
+          };
+              
+          sendFormToApi(formData);    
+          console.log(form);
+        })
+        
+        async function sendFormToApi(formData) {
+          const url = "https://6632937ac51e14d69564d9af.mockapi.io/test/v1";
+          const endpoint = "/form";
+        
+          const response = await fetch(url+endpoint, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+          })
+          console.log(response);
+          document.getElementById('formModal').reset();
+        }
 </script>
 </body>
 </html>
