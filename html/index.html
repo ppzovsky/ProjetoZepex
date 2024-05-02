@@ -13,7 +13,8 @@
     <title>ZEPEX Expedições</title>
   </head>
   <body>
-    <div class="container01">
+    <!-- background-video -->
+    <div class="containerPrincipal">
       <video
         class="videoBack"
         src="../vids/backGroundVid.mp4"
@@ -22,38 +23,75 @@
         loop
       ></video>
       <a
-        class="fontTema homenagem"
+        class="fontTema homenagem linkContato"
         target="_blank"
         href="https://pixabay.com/users/matthias_groeneveld-4535957/"
         >Matthias Groeneveld - Pixabay</a
       >
+      <!-- fim background-video -->
+
+      <section class="primeiroContainer">
+        <section class="segundoContainer">
+          <h2 class="temaCentral fontTema">
+            Conheça o que há de melhor na Região Serrana
+          </h2>
+  
+          <!-- Caixa de fotos -->
+          <article class="containerTodasFotos">
+            <div class="caixaFotos cx-1">
+              <a class="ajusteFoto01" href="../html/teresopolis.html"
+                ><img
+                  class="imgInterna"
+                  src="/ProjetoZepex/img/teresopolis/caminhadaParnaso03.jpg"
+                  alt="serra dos orgaos" /></a>
+                  <span class="fontTema" style="text-align: center">Teresópolis</span>
+            </div>
+            <div class="caixaFotos cx-2">
+              <a class="ajusteFoto02" href="../html/friburgo.html"
+                ><img
+                  class="imgInterna"
+                  src="/ProjetoZepex/img/friburgo/caoSentado.jpg"
+                  alt="montanha cao sentado" /></a
+              ><span class="fontTema" style="text-align: center">Friburgo</span>
+            </div>
+            <div class="caixaFotos cx-3">
+              <a class="ajusteFoto03" href="../html/petropolis.html"
+                ><img
+                  class="imgInterna"
+                  src="/ProjetoZepex/img/petropolis/palacioDeCristal.png"
+                  alt="palacio de cristal" />
+              </a>
+              <span class="fontTema" style="text-align: center">Petrópolis</span>
+            </div>
+          </article>
+        </section>
+  
+        <!-- Container Vertical -->
+        <div class="terceiroContainer">
+          <a class="novoLogo" href="/html/index.html">
+            <img
+              class="novoLogo"
+              src="../img/Logos/newLogo.png"
+              alt="Logo Montanha"
+            />
+          </a>
+          <p class="footerDireitos">Todos os direitos reservados®</p>
+        </div>
+  
+        <!-- navBar -->
+        <nav class="navbar">
+          <div class="etiquetaNav">
+            <a class="fontTema linkContato" href="#" data-bs-toggle="modal"   data-bs-target="#modalForm">Contato</a>
+          </div>
+          <div class="etiquetaNav">
+            <a class="fontTema linkContato" href="Contato.html">Sobre</a>
+          </div>
+        </nav>
+      </section>
     </div>
     
-    <div class="container02"></div>
-
-    <div class="container03">
-      <h2 class="temaCentral fontTema">
-        Conheça o que há de melhor na Região Serrana
-      </h2>
-    </div>
-
-      <div class="container04">
-        <a class="novoLogo" href="/html/index.html">
-          <img
-            class="novoLogo"
-            src="../img/Logos/newLogo.png"
-            alt="Logo Montanha"
-          />
-        </a>
-        <p class="footerDireitos">Todos os direitos reservados®</p>
-      </div>
-      
-    <div class="containerContato">
-      <a class="fontTema linkContato" href="#" data-bs-toggle="modal" data-bs-target="#modalForm">Contato</a>
-    </div>
-    <div class="sobreEquipe">
-      <a class="fontTema linkContato" href="Contato.html">Sobre</a>
-    </div>
+<!-- -------------------------------------------------------------- -->
+    
 
     <!-- /*-----modal----*/ -->
     <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -87,36 +125,7 @@
       </div>
     </div>
 
-      <div class="containerFotoTotal">
-        <div class="containerFotos">
-          <a class="ajusteFoto01" href="teresopolis.html"
-            ><img
-              class="img01"
-              src="../img/teresopolis/caminhadaParnaso03.jpg"
-              alt="serra dos orgaos" /></a
-          ><span class="fontTema" style="text-align: center">Teresópolis</span>
-        </div>
-
-        <div class="containerFotos02">
-          <a class="ajusteFoto02" href="friburgo.html"
-            ><img
-              class="img02"
-              src="../img/friburgo/caoSentado.jpg"
-              alt="montanha cao sentado" /></a
-          ><span class="fontTema" style="text-align: center">Friburgo</span>
-        </div>
-
-        <div class="containerFotos03">
-          <a class="ajusteFoto03" href="petropolis.html"
-            ><img
-              class="img03"
-              src="../img/petropolis/palacioDeCristal.png"
-              alt="vista da montanha" /></a
-          ><span class="fontTema" style="text-align: center">Petrópolis</span>
-        </div>
-      </div>
-    </div>
-
+    <!-- scripts -->
     <script src="../js/formularioContato.js"></script>
     <!-- <script src="../js/main.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
