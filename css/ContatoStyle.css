@@ -188,4 +188,26 @@ textarea {
     border-radius: 90px;
 }
 
+#githubIcon {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    text-decoration: none;
+    
+}
 
+#linkedinIcon {
+    width: 40px;
+    height: 40px;
+    border: 0;
+}
+
+#jokerIcon {
+    width: 60px;
+    height: 40px;
+    border: 0;
+}
+
+.classeA {
+    color: rgba(0, 0, 0, 0);
+}
