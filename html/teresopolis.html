@@ -269,14 +269,14 @@
         </div>
         
         <a href="#"><div class="containerContato">
-          <a class="fontTema linkContato" href="#" data-bs-toggle="modal" data-bs-target="#modalForm">Contato</a>
+          <a class="fontTema linkContato" href="#" data-bs-toggle="modal" data-bs-target="#modalForm">Reservas</a>
         </div>
     
         <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Entre em Contato</h5>
+                <h5 class="modal-title text-center" id="exampleModalLabel">Faça sua reserva</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body" id="modalbody">
@@ -305,6 +305,41 @@
                       <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Pedra da Tartaruga">
                         <label class="form-check-label" for="inlineCheckbox3">Pedra da Tartaruga</label>
+                      </div>
+                      <br>
+                      <div class="row g-2">
+                        <div class="col-md">
+                          <div class="mb-3">
+                            <label for="data" class="form-label">Data do passeio</label>
+                            <input type="date" class="form-control" id="data" name="data-passeio" required>
+                          </div>
+                          
+                        </div>
+                        <div class="col-md">
+                          <br>
+                          <div class="form-floating">
+                            <select class="form-select" id="numeroPessoas">
+                              <option selected>1 pessoa</option>
+                              <option value="1">2 pessoas</option>
+                              <option value="2">3 pessoas</option>
+                              <option value="3">4 pessoas</option>
+                              <option value="3">5 pessoas</option>
+                              <option value="3">6 pessoas</option>
+                              <option value="3">7 pessoas</option>
+                              <option value="3">8 ou mais pessoas</option>
+                            </select>
+                            <label for="numeroPessoas" >Número de pessoas no pacote</label>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="form-floating">
+                        <select class="form-select" id="tipo">
+                          <option selected>Básico (R$60 por visitação, somente transporte entre os pontos turísticos)</option>
+                          <option value="1">Premium (R$150 por visitação, transporte + Guia turístico exclusivo)</option>
+                          <option value="2">Ultra (R$220 por visitação, transporte + Guia Turístico + Almoço + Lanche)</option>
+                        </select>
+                        <label for="tipo" >Tipo de pacote</label>
                       </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
