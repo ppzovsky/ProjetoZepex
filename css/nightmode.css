@@ -12,27 +12,23 @@
   }
   
   .night-mode {
-/* Background color for night mode */
-background-color: #222;
 
-/* Text color for night mode */
 color: #ddd;
 
-/* Adjust other styles as needed */
 h2 {
-  color: #eee; /* Brighter heading color */
+  color: #eee; 
 }
 .containerFotos img {
-  filter: grayscale(100%); /* Make images grayscale */
+  filter: grayscale(100%); 
 }
 .linkContato {
-  color: #ddd; /* Adjust link color */
+  color: #ddd; 
 }
 .linkContato:hover {
-  color: #fff; /* Adjust hover color */
+  color: #fff; 
 }
 .novoLogo img:hover {
-  filter: none; /* Disable hover effect on logo */
+  filter: none; 
 }
 .primeiroContainer{
     background-color: #272E43;

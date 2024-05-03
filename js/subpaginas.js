@@ -22,11 +22,18 @@ form.addEventListener('submit', async function(event) {
     passeios.push(checkbox.value);
     }
 
+    const data = document.getElementById('data').value;
+    const pessoas = document.getElementById('numeroPessoas').value;
+    const tipo = document.getElementById('tipo').value;
+
     const formData = {
     nome,
     email,
     mensagem,
-    passeios
+    passeios,
+    data,
+    pessoas,
+    tipo
     };
         
     sendFormToApi(formData);    
@@ -46,4 +53,31 @@ async function sendFormToApi(formData) {
     })
     console.log(response);
     document.getElementById('formModal').reset();
+    
+    criarModal();
+
+}
+function criarModal() {
+    var modal = document.createElement('div');
+    modal.classList.add('modal', 'fade', 'd-flex', 'justify-content-center', 'align-items-center');
+    modal.setAttribute('tabindex', '-1');
+
+    modal.innerHTML = `
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <p>Reserva efetuada com sucesso, as informações de pagamento serão enviadas ao seu email.</p>
+                </div>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    var modalInstance = new bootstrap.Modal(modal);
+    modalInstance.show();
+
+    modal.addEventListener('hidden.bs.modal', function () {
+        document.body.removeChild(modal);
+    });
 }
