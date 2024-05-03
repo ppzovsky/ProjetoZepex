@@ -14,6 +14,7 @@
   .night-mode {
 
 color: #ddd;
+background-color: #222;
 
 h2 {
   color: #eee; 
@@ -33,7 +34,13 @@ h2 {
 .primeiroContainer{
     background-color: #272E43;
 }
+.container02{
+    background-color: #272E43;
+}
 .segundoContainer{
+  background-color: #394261;
+}
+.container03{
   background-color: #394261;
 }
 .terceiroContainer{
@@ -42,10 +49,16 @@ h2 {
 .caixaFotos{
     background-color: #1E222C;
 }
+.containerFotos{
+    background-color: #1E222C;
+}
 .temaCentral{
     background-color: #1E222C;
 }
 .etiquetaNav{
+    background-color: #1E222C;
+}
+.containerContato{
     background-color: #1E222C;
 }
 .novoLogo{
@@ -54,13 +67,19 @@ h2 {
 .novoLogo img:hover{
     filter: invert(100%);
 }
-.containerPrincipal{
-    background-color: #222;
+
+.novoLogo:hover{
+    filter: invert(100%);
 }
-.containerPrincipal video{
+
+video{
     filter: grayscale(100%);
     opacity: 30%;
 }
+.container04{
+  background-color: #1E222C;
+}
+
 }
 
   
