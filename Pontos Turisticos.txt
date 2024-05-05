@@ -15,8 +15,9 @@ Pedra do Cachorro
 Tres Picos
 
 Tasks:
-1- Html pagina inicial: Miele
-2- Html Friburgo: Lucas Amorim
-3- Html Teresopolis: Bianco
-4- Html Petropolis: Arthur
-5- Estilizacao e padronizacao das paginas: Pepê
+1- endPoints dos forms, favicon, ajustes e correçoes: Luiz Miele
+2- QA e correções: Lucar Amorin
+3- homePage html&style: Bianco Lorencini
+4- Design e Qa: Artur Foster
+5- Pag contato: Thiago Moura
+6- Estilizacao&padronizacao das paginas de teresópolis,friburgo e petropolis: Pepê
